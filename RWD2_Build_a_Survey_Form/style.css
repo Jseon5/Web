@@ -1,3 +1,30 @@
-body{
-    background-color: gray;
+body {
+    background-color: #1D428A;
+    font-family: 'Poppins','微軟正黑體',sans-serif;
 }
+#header{
+    background-color:bisque;
+    width: 98vw;
+    text-align: center;
+    border-radius:3px;
+    margin:auto;
+    margin-top: 20px;
+}
+#main{
+    background-color: #FFC72C;
+    width:98vw;
+    height:auto;
+    border-radius:3px;
+}
+#title {
+}
+
+#description {text-align:center;}
+
+#survey-form {}
+
+#name {}
+
+#email {}
+
+#number {}
