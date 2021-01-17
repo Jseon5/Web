@@ -21,14 +21,14 @@
         <form id="survey-form">
             <div class="formgroup">
 
-                <label for='name-label' class="formgroup-title">Name</label>
-                <input type="text" class="formgroup-content" id="name-label" required placeholder="名字">
-                <label for='email-label' class='formgroup-title'>Email</label>
-                <input type="email" class="formgroup-content" id="email-label" required placeholder="電子信箱">
-                <label for='number-label' class='formgroup-title'>
+                <label for='name' id="name-label" class="formgroup-title">Name</label>
+                <input type="text" class="formgroup-content" id="name" required placeholder="名字">
+                <label for='email' id="email-label" class='formgroup-title'>Email</label>
+                <input type="email" class="formgroup-content" id="email" required placeholder="電子信箱">
+                <label for='number' id="number-label" class='formgroup-title'>
                     Age <span style="font-size: 12pt;">(optional)</span>
                 </label>
-                <input type="number" class="formgroup-content" id="number-label" min="1" max="120"  placeholder="年齡">
+                <input type="number" class="formgroup-content" id="number" min="1" max="120"  placeholder="年齡">
                 <label for="dropdown-label-role" class='formgroup-title'>Which option best describes your current role?
                 </label>
 
@@ -49,11 +49,11 @@
                 <input type="radio" name="answer" id="rec2" value="也許會"><label for="rec2">也許會</label><br>
                 <input type="radio" name="answer" id="rec3" value="不確定"><label for="rec3">不確定</label><br>
                 <input type="radio" name="answer" id="rec4" value="How dare you?"><label for="rec4">How dare you?</label><br>
-                <label for="dropdown-label-favorite" class="formgroup-title">What is your favorite feature of
+                <label for="dropdown" class="formgroup-title">What is your favorite feature of
                     freeCodeCamp?
                 </label>
 
-                <select name="recommand" id="dropdown-label-favorite" class="formgroup-content" required>
+                <select name="recommand" id="dropdown" class="formgroup-content" required>
                     <option value="" disabled selected>請選擇</option>
                     <option value="Challenges">Challenges</option>
                     <option value="Projects">Projects</option>
@@ -87,12 +87,13 @@
                 <label for="a11">Additional Courses </label> <br>
                 <span class="formgroup-title">Any comments or suggestions? </span> <br>
                 <textarea class="formgroup-textarea" cols="100" rows="5">輸入你想要寫的內容...</textarea><br>
-                <button type="submit" class="formgroup-content" style="margin-top: 20px;">SUBMIT</button>
+                <button type="submit" id="submit" class="formgroup-content" style="margin-top: 20px;">SUBMIT</button>
             </div>
         </form>
 
 
     </main>
-</body>
 
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
