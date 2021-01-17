@@ -1,25 +1,99 @@
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a Survey Form!</title>
 </head>
-<body>
-    <div class="title">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <h1></h1>
-        <h1></h1>
-    </div>
 
-    
-    
+<body>
+    <header id="header">
+        <h1 id="title">freeCodeCamp Survey Form
+        </h1>
+        <p id="description">Thank you for taking the time to help us improve the platform
+        </p>
+    </header>
+
+    <main id="main">
+        <form id="survey-form">
+            <div class="formgroup">
+
+                <label for='name' id="name-label" class="formgroup-title">Name</label>
+                <input type="text" class="formgroup-content" id="name" required placeholder="名字">
+                <label for='email' id="email-label" class='formgroup-title'>Email</label>
+                <input type="email" class="formgroup-content" id="email" required placeholder="電子信箱">
+                <label for='number' id="number-label" class='formgroup-title'>
+                    Age <span style="font-size: 12pt;">(optional)</span>
+                </label>
+                <input type="number" class="formgroup-content" id="number" min="1" max="120"  placeholder="年齡">
+                <label for="dropdown-label-role" class='formgroup-title'>Which option best describes your current role?
+                </label>
+
+                <select name="your current role" class="formgroup-content" id="dropdown-label-role" required>
+                    <option value="" disabled selected>Select your current role</option>
+                    <option value="Student">學生</option>
+                    <option value="Full time job">全職工作</option>
+                    <option value="Full time learner">在職專班</option>
+                    <option value="Prefer not to say">保密</option>
+                    <option value="trash">trash</option>
+                    <option value="other">其他</option>
+                </select>
+
+                <label for="" class="formgroup-title">Would you recommend freeCodeCamp to a friend?
+                </label>
+                <br>
+                <input type="radio" name="answer" id="rec1" value="當然會" required><label for="rec1">當然會</label> <br>
+                <input type="radio" name="answer" id="rec2" value="也許會"><label for="rec2">也許會</label><br>
+                <input type="radio" name="answer" id="rec3" value="不確定"><label for="rec3">不確定</label><br>
+                <input type="radio" name="answer" id="rec4" value="How dare you?"><label for="rec4">How dare you?</label><br>
+                <label for="dropdown" class="formgroup-title">What is your favorite feature of
+                    freeCodeCamp?
+                </label>
+
+                <select name="recommand" id="dropdown" class="formgroup-content" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+
+                <span class="formgroup-title"> Would you like to see improved?</span> <span
+                    style="font-size: 12pt;">(Check all that apply)</span><br>
+                <input type="checkbox" name="checkbox-answer" id="a1" value="Front-end Projects" >
+                <label for="a1">Projects </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a2" value="Back-end Projects">
+                <label for="a2">Back-endProjects </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a3" value="Data Visualization">
+                <label for="a3">Data Visualization </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a4" value="Challenges">
+                <label for="a4">Challenges </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a5" value="Open Source Community">
+                <label for="a5">Open Source Community </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a6" value="Gitter help rooms">
+                <label for="a6">Gitter help rooms </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a7" value="Videos">
+                <label for="a7">Videos </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a8" value="City Meetups">
+                <label for="a8">City Meetups </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a9" value="Wiki">
+                <label for="a9">Wiki </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a10" value="Forum">
+                <label for="a10">Forum </label> <br>
+                <input type="checkbox" name="checkbox-answer" id="a11" value="Additional Courses">
+                <label for="a11">Additional Courses </label> <br>
+                <span class="formgroup-title">Any comments or suggestions? </span> <br>
+                <textarea class="formgroup-textarea" cols="100" rows="5">輸入你想要寫的內容...</textarea><br>
+                <button type="submit" id="submit" class="formgroup-content" style="margin-top: 20px;">SUBMIT</button>
+            </div>
+        </form>
+
+
+    </main>
+
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

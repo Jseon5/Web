@@ -1,3 +1,67 @@
-body{
-    background-color: gray;
+body {
+    /* background-color: rebeccapurple; */
+    background-color:darkslateblue;
+    font-family: 'Poppins', '微軟正黑體', sans-serif;
 }
+
+#header {
+    /* background-color: bisque; */
+    width: 98vw;
+    text-align: center;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#main {
+    background-color: darkslateblue;
+    width: 98vw;
+    height: auto;
+    border-radius: 3px;
+    margin: auto;
+}
+
+
+
+#survey-form {
+    background-color: #FFC72C;
+    width: 35vw;
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 3px;
+    margin: auto;
+}
+
+/* @media(max-width:500px) {
+    #survey-form {
+        min-width: 400px;
+    }
+} */
+
+.formgroup {
+    font-size: 14pt;
+    padding: 5%;
+    margin: auto;
+}
+
+.formgroup-title {
+    padding-left: 0.2em;
+}
+
+.formgroup-content {
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    min-width: 300px;
+    height: 2.3em;
+    /* border-radius: 5px; */
+    margin-bottom: 10px;
+
+}
+.formgroup-textarea{
+    font-size: inherit;
+    font-family: inherit;
+    max-width: 100%;
+}
+
+
